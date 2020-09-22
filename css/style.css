@@ -1,0 +1,383 @@
+
+@font-face {
+    font-family: 'Brandon_thin';
+    src: url('../fonts/Brandon_thin.otf');
+
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #F7F7F7;
+    color: #575757;
+    margin:0;
+    padding: 0;
+}
+.item
+{
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.26);
+    border-radius: 3px;
+    margin: 20px 10px;
+}
+.price
+{
+    display: inline-block;
+    white-space: nowrap;
+    font-style: normal;
+    font-size: 1.4rem;
+    color: #f60;
+
+
+
+}
+.price del
+{
+    display: inline-block;
+    white-space: nowrap;
+    font-style: normal;
+    font-size: 0.85rem;
+    color: #c4c4c4;
+}
+.desc
+{
+    width:100%;
+    word-wrap: break-word;word-break: break-all;
+}
+.item img
+{
+    width:150px;
+    height:150px;
+    float: left;
+    border-radius: 5px;
+    margin: 5px;
+}
+.title
+{
+font-weight: bold;
+    border-bottom: #9d9d9d solid 1px;
+    margin-left: 160px;
+    padding-bottom: 7px;
+    font-size: 18px;
+}
+img.image_view.img-rounded {
+    float: unset;
+}
+.item summary {
+
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1;
+    background-color: #ededed;
+    outline:none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.item details {
+    /* overflow: hidden; */
+    /* height: 3rem; */
+    clear: both;
+    margin: 10px 0;
+    transition: height 150ms ease;
+    border: none;
+    padding: 10px;
+}
+
+.item summary:hover {
+ background-color: #dcdcdc;
+    transition: all 0.3s ease;
+}
+
+.item details[open] {
+   /* height: 8rem;*/
+}
+
+.item details section {
+    padding: 1rem;
+    border-left: 2px solid #f8f8f8;
+    border-right: 2px solid #f8f8f8;
+    border-bottom: 2px solid #f8f8f8;
+    cursor: unset;
+}
+.info
+{
+    font-size: 12px;
+
+}
+#header
+{
+
+    background-color: #ff6600;
+    text-align: center;
+    color: #fff;
+    line-height: 25px;
+
+}
+#header #title
+{
+    font-size: 20px;
+    padding: 3px 0;
+}
+.tips1 li {
+    display: inline-block;
+    /* float: left; */
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.tips1 li:before {
+    content: '　●';
+}
+#header #location
+{
+font-size: 12px;
+}
+#hide_item_container
+{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 13px;
+    display: none;
+    user-select: none;
+    cursor: pointer;
+}
+.loading
+{
+    background-color: #e2e2e2;
+    animation: loading .5s infinite alternate;
+    border-radius: 5px;
+}
+.loading_title
+{
+    margin-left:160px;
+}
+#hide_item
+{
+    outline: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+img.image_view.img-rounded.zoomify {
+    width: 150px;
+    height: 150px;
+     float: unset;
+ /*   border-radius: 5px;*/
+    margin: 5px;
+    display: initial;
+}
+.description
+{
+    font-size: 12px;
+    padding: 10px 10px;
+    background-color: #eaeaea;
+}
+.tips
+{
+    font-size: 14px;
+}
+.views {
+    text-align: right;
+    font-size: 16px;
+}
+.menu_title
+{
+    margin: 3px 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+img.view_icon {
+    width: 16px !important;
+    height: unset !important;
+    float: unset !important;
+    margin-left: 8px !important;
+    vertical-align: middle;
+    margin-bottom: 0 !important;
+}
+
+.d2 {
+ background: #fff;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    display: inline-block;
+    float: unset;
+    padding-right: 40px;
+    margin-top: 20px;
+      border-color: #ff6600;
+}
+
+.d2 .search_button_container {
+    position: relative;
+    display: inline-block;
+
+}
+
+
+.d2 input {
+    width: 300px;
+    height: 42px;
+    background: transparent;
+    padding-left: 10px;
+    box-sizing: border-box;
+    transition: .3s ease-out;
+}
+
+.d2:hover > input{
+    transition: .3s ease-out;
+    width:320px;
+    padding-left: 15px;
+
+}
+
+.d2 input:focus{
+    transition: .3s ease-out;
+    width:320px;
+    padding-left: 15px;
+}
+
+.d2 input, .d2 button {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.d2 button {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 8px;
+    right: -30px;
+  background: #ff6600;
+    transition: .3s ease-out;
+    cursor: pointer;
+}
+.d2 button:hover {
+    transition: .3s ease-out;
+    background: #ED670A;
+}
+.d2 button:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    color: #F9F0DA;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@keyframes loading {
+    from {background-color:#b8b3b3;}
+    to {background-color: hsl(0, 5%, 78%);}
+}
+
+@media screen and (max-width: 700px) {
+    .search_container
+    {
+        width:100%;
+        text-align:center;
+    }
+    .d2 {
+    display: inline-block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 40px;
+}
+    .d2 input:focus{
+    transition: .3s ease-out;
+    width:210px;
+    padding-left: 15px;
+}
+    .d2 input {
+    width: 200px;
+}
+.d2 input, .d2 button {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.d2 input {
+
+    height: 42px;
+    background: #fff;
+    padding-left: 10px;
+    box-sizing: border-box;
+    transition: .3s ease-out;
+}
+    #header #location
+    {
+        margin: 3px auto;
+        width: 95%;
+    }
+    .loading_title
+    {
+        margin-left:0px;
+    }
+    .item img {
+        width: 150px;
+        height: 150px;
+        float: unset;
+        border-radius: 5px;
+        margin: 0;
+        display: inline-block;
+    }
+    .item .img {
+        width: 100%;
+        height: 170px;
+        text-align: center;
+    }
+    .title {
+         font-weight: bold;
+         border-bottom: #9d9d9d solid 1px;
+         margin-left: 0;
+         padding-bottom: 7px;
+         font-size: 18px;
+     }
+    .info {
+        font-size: 12px;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    img.image_view.img-rounded.zoomify {
+        width: 70%;
+        height: 70%;
+        float: unset;
+        border-radius: 5px;
+        display: block;
+        margin: 15px auto;
+    }
+    .item img {
+        width: 70%;
+        height: 70%;
+        margin-bottom: 15px;
+    }
+    .item .img {
+        width: 100%;
+         height:unset;
+        text-align: center;
+    }
+    .item .loading_image {
+        width: 100%;
+
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 270px) {
+        .d2 input:focus{
+    transition: .3s ease-out;
+    width:110px;
+    padding-left: 15px;
+}
+    .d2 input {
+    width: 100px;
+}
+}
