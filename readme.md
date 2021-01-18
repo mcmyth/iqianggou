@@ -8,4 +8,4 @@
 获取定位过久请手动点击设置当前定位
 
 ## 演示
-![示例](https://tu.yaohuo.me/imgs/2021/01/83665f856c4bc19f.png)
+![示例](https://tu.yaohuo.me/imgs/2021/01/f507db5b95b7321a.jpg)
